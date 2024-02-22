@@ -1,0 +1,26 @@
+
+Used algorithms in different programming languages:
+
+Python:
+Sorting Algorithm: Tim Sort (a hybrid sorting algorithm based on Merge Sort and Insertion Sort).
+Implementation: Python's built-in sorted() function and the list.sort() method use Tim Sort. Tim Sort was introduced in Python 2.3 and has been the standard sorting algorithm since then.
+
+Java:
+Sorting Algorithm: Dual-Pivot Quick Sort (Java 7 onwards), Tim Sort (Java 8 onwards for objects, Java 7 for arrays of objects).
+Implementation: Java's Arrays.sort() method typically uses a variant of Dual-Pivot Quick Sort for primitive types and Tim Sort for objects. Java's standard sorting algorithm for arrays of objects changed from Merge Sort to Tim Sort starting from Java 7.
+
+JavaScript:
+Sorting Algorithm: Tim Sort (a variant of Merge Sort and Insertion Sort).
+Implementation: JavaScript's built-in Array.prototype.sort() method uses Tim Sort. This algorithm was introduced in ECMAScript 5, so it's supported by most modern JavaScript engines.
+
+C++:
+Sorting Algorithm: Introsort (a hybrid sorting algorithm based on Quick Sort, Heap Sort, and Insertion Sort).
+Implementation: The C++ Standard Library's std::sort() function typically uses Introsort, which is a combination of Quick Sort, Heap Sort, and Insertion Sort. Introsort is designed to provide good average-case performance while still ensuring worst-case O(n log n) time complexity.
+
+C#:
+Sorting Algorithm: Introspective Sort (a hybrid sorting algorithm based on Quick Sort, Heap Sort, and Insertion Sort).
+Implementation: The .NET Framework's Array.Sort() method (in C#) typically uses Introspective Sort, which combines Quick Sort, Heap Sort, and Insertion Sort. Similar to C++, this algorithm is designed to provide good performance across various scenarios.
+
+Ruby:
+Sorting Algorithm: Quick Sort (previously Merge Sort before Ruby 1.9), Introsort.
+Implementation: Ruby's built-in sort method (e.g., Array#sort) typically uses Quick Sort or Introsort. Before Ruby 1.9, Merge Sort was used, but it was replaced by Quick Sort in later versions.

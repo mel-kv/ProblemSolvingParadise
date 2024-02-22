@@ -1,0 +1,33 @@
+To understand how heap sort works, we first need to understand some basic concepts related to binary heaps. 
+
+Heap is a tree-based data structure in which all the tree nodes are in a particular order, such that the tree satisfies the heap properties (that is, a specific parent-child relationship is followed throughout the tree). 
+
+A heap data structure where the tree is a complete binary tree is referred to as a binary heap.
+
+A complete binary tree is a binary tree in which:
+
+All levels except the bottom-most level are completely filled.
+All nodes in the bottom-most level are as far left as possible. 
+The last level may or may not be completely filled.
+
+A full binary tree is a binary tree where every node has 0 or 2 children.
+
+
+
+Properties of a Binary Heap
+
+1. They are complete binary trees: This means all levels are totally filled (except maybe the last level), and the nodes in the last level are as left as possible. This property makes arrays a suitable data structure for storing binary heaps. 
+
+We can easily calculate the indices of a node’s children. 
+For parent index i, the left child will be found at index 2*i+1, 
+and the right child will be found at index 2*i+2 (for indices that start with 0). 
+Similarly, for a child at index i, its parent can be found at index floor((i-1)/2).
+
+2. Heaps are mainly of two types — max heap and min heap: 
+
+In a max heap, the value of a node is always >= the value of each of its children. 
+In a min heap, the value of a parent is always <= the value of each of its children.
+ 
+
+3. Root element: In a max heap, the element at the root will always be the maximum. In a min heap, the root element will always be the smallest. The heap sort algorithm takes advantage of this property to sort an array using heaps. 
+
