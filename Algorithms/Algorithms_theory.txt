@@ -1,0 +1,67 @@
+Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. 
+
+Characteristics of an Algorithm - Not all procedures can be called an algorithm. An algorithm should have the following characteristics:
+
+  Unambiguous − Algorithm should be clear and unambiguous. Each of its steps (or phases), and their inputs/outputs should be clear and must lead to only one meaning.
+
+  Input − An algorithm should have 0 or more well-defined inputs.
+
+  Output − An algorithm should have 1 or more well-defined outputs, and should match the desired output.
+
+  Finiteness − Algorithms must terminate after a finite number of steps.
+
+  Feasibility − Should be feasible with the available resources.
+
+  Independent − An algorithm should have step-by-step directions, which should be independent of any programming code.
+
+Algorithm Analysis - Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following:
+    
+  A Priori Analysis − This is a theoretical analysis of an algorithm. Efficiency of an algorithm is measured by assuming that all other factors, for example, processor speed, are constant and have no effect on the implementation.
+
+  A Posterior Analysis − This is an empirical analysis of an algorithm. The selected algorithm is implemented using programming language. This is then executed on target computer machine. In this analysis, actual statistics like running time and space required, are collected.
+
+Algorithm Complexity - Suppose X is an algorithm and n is the size of input data, the time and space used by the algorithm X are the two main factors, which decide the efficiency of X. The complexity of an algorithm f(n) gives the running time and/or the storage space required by the algorithm in terms of n as the size of input data.
+
+  Time Factor − Time is measured by counting the number of key operations such as comparisons in the sorting algorithm.
+
+  Space Factor − Space is measured by counting the maximum memory space required by the algorithm.
+
+Space Complexity - represents the amount of memory space required by the algorithm in its life cycle. The space required by an algorithm is equal to the sum of the following two components:
+
+  A fixed part that is a space required to store certain data and variables, that are independent of the size of the problem. For example, simple variables and constants used, program size, etc.
+
+  A variable part is a space required by variables, whose size depends on the size of the problem. For example, dynamic memory allocation, recursion stack space, etc.
+
+  Space complexity S(P) of any algorithm P is S(P) = C + SP(I), where C is the fixed part and S(I) is the variable part of the algorithm, which depends on instance characteristic I.
+
+Asymptotic analysis - refers to defining the mathematical foundation/framing of its run-time performance. Using asymptotic analysis, we can very well conclude the best case, average case, and worst case scenario of an algorithm.
+
+  Usually, the time required by an algorithm falls under three types:
+    Best Case − Minimum time required for program execution.
+    Average Case − Average time required for program execution.
+    Worst Case − Maximum time required for program execution.
+
+  Asymptotic Notations - Execution time of an algorithm depends on the instruction set, processor speed, disk I/O speed, etc. Hence, we estimate the efficiency of an algorithm asymptotically.
+
+    Time function of an algorithm is represented by T(n), where n is the input size.
+
+    Different types of asymptotic notations are used to represent the complexity of an algorithm. Following asymptotic notations are used to calculate the running time complexity of an algorithm.
+
+    O − Big Oh Notation - The notation Ο(n) is the formal way to express the upper bound of an algorithm's running time. is the most commonly used notation. It measures the worst case time complexity or the longest amount of time an algorithm can possibly take to complete.
+
+    Ω − Big omega Notation - The notation Ω(n) is the formal way to express the lower bound of an algorithm's running time. It measures the best case time complexity or the best amount of time an algorithm can possibly take to complete.
+
+    θ − Big theta Notation - The notation θ(n) is the formal way to express both the lower bound and the upper bound of an algorithm's running time. Some may confuse the theta notation as the average case time complexity; while big theta notation could be almost accurately used to describe the average case, other notations could be used as well.
+
+    o − Little Oh Notation
+    ω − Little omega Notation
+
+    Common Asymptotic Notations (common):
+      constant	−	O(1)
+      logarithmic	−	O(log n)
+      linear	−	O(n)
+      n log n	−	O(n log n)
+      quadratic	−	O(n2)
+      cubic	−	O(n3)
+      polynomial	−	n^O(1)
+      exponential	−	2^O(n)

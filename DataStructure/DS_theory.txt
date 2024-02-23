@@ -1,0 +1,140 @@
+Data Structure is a systematic way to organize data in order to use it efficiently. Following terms are the foundation terms of a data structure.
+
+  Interface − Each data structure has an interface. Interface represents the set of operations that a data structure supports. An interface only provides the list of supported operations, type of parameters they can accept and return type of these operations.
+
+  Implementation − Implementation provides the internal representation of a data structure. Implementation also provides the definition of the algorithms used in the operations of the data structure.
+
+Characteristics of a Data Structure:
+  Correctness − Data structure implementation should implement its interface correctly.
+
+  Time Complexity − Running time or the execution time of operations of data structure must be as small as possible.
+
+  Space Complexity − Memory usage of a data structure operation should be as little as possible.
+
+Execution Time Cases - There are three cases which are usually used to compare various data structure's execution time in a relative manner:
+
+  Worst Case − This is the scenario where a particular data structure operation takes maximum time it can take. If an operation's worst case time is ƒ(n) then this operation will not take more than ƒ(n) time where ƒ(n) represents function of n.
+
+  Average Case − This is the scenario depicting the average execution time of an operation of a data structure. If an operation takes ƒ(n) time in execution, then m operations will take mƒ(n) time.
+
+  Best Case − This is the scenario depicting the least possible execution time of an operation of a data structure. If an operation takes ƒ(n) time in execution, then the actual operation may take time as the random number which would be maximum as ƒ(n).
+
+Basic DSA Terminologies:
+  Data − Data are values or set of values.
+
+  Data Item − Data item refers to single unit of values.
+
+  Group Items − Data items that are divided into sub items are called as Group Items.
+
+  Elementary Items − Data items that cannot be divided are called as Elementary Items.
+
+  Attribute and Entity − An entity is that which contains certain attributes or properties, which may be assigned values.
+
+  Entity Set − Entities of similar attributes form an entity set.
+
+  Field − Field is a single elementary unit of information representing an attribute of an entity.
+
+  Record − Record is a collection of field values of a given entity.
+
+  File − File is a collection of records of the entities in a given entity set.
+
+Types of Data Structures:
+
+  Array Data Structure - An array is a type of linear data structure that is defined as a collection of elements with same or different data types. They exist in both single dimension and multiple dimensions. These data structures come into picture when there is a necessity to store multiple elements of similar nature together at one place.
+
+    Element − Each item stored in an array is called an element.
+
+    Index − Each location of an element in an array has a numerical index, which is used to identify the element.
+
+  String Data Structure - String is a type of primitive data structure that stores a sequence of characters. It is typically used for storing, manipulating, and processing texts such as user input, messages, labels and so on. Like arrays, strings are also represented as a collection of buckets where each bucket stores one character. 
+
+  Linked List Data Structure - A linked list is a linear data structure which can store a collection of "nodes" connected together via links i.e. pointers. Linked lists nodes are not stored at a contiguous location, rather they are linked using pointers to the different memory locations. A node consists of the data value and a pointer to the address of the next node within the linked list. A linked list is a dynamic linear data structure whose memory size can be allocated or de-allocated at run time based on the operation insertion or deletion, this helps in using system memory efficiently. Linked lists can be used to implement various data structures like a stack, queue, graph, hash maps, etc. A linked list starts with a head node which points to the first node. Every node consists of data which holds the actual data (value) associated with the node and a next pointer which holds the memory address of the next node in the linked list. The last node is called the tail node in the list which points to null indicating the end of the list.
+
+    Singly Linked Lists - contain two "buckets" in one node; one bucket holds the data and the other bucket holds the address of the next node of the list. Traversals can be done in one direction only as there is only a single link between two nodes of the same list.
+
+    Doubly Linked Lists - contain three "buckets" in one node; one bucket holds the data and the other buckets hold the addresses of the previous and next nodes in the list. The list is traversed twice as the nodes in the list are connected to each other from both sides.
+
+    Circular Linked Lists - can exist in both singly linked list and doubly linked list. Since the last node and the first node of the circular linked list are connected, the traversal in this linked list will go on forever until it is broken.
+
+    More at: https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm 
+
+  Double Linked List Data Structure - a variation of Linked list in which navigation is possible in both ways, forward as well as backward easily as compared to Single Linked List.
+    
+    Link − Each link of a linked list can store a data called an element.
+
+    Next − Each link of a linked list contains a link to the next link called Next.
+
+    Prev − Each link of a linked list contains a link to the previous link called Prev.
+
+    Linked List − A Linked List contains the connection link to the first link called First and to the last link called Last.
+
+    More at: https://www.tutorialspoint.com/data_structures_algorithms/doubly_linked_list_algorithm.htm
+
+  Circular Linked List Data Structure - a variation of Linked list in which the first element points to the last element and the last element points to the first element. Both Singly Linked List and Doubly Linked List can be made into a circular linked list.
+    More at: https://www.tutorialspoint.com/data_structures_algorithms/circular_linked_list_algorithm.htm 
+
+  Stack Data Structure - a linear data structure where elements are stored in the LIFO (Last In First Out) principle where the last element inserted would be the first element to be deleted. A stack is an Abstract Data Type (ADT), that is popularly used in most programming languages. It is named stack because it has the similar operations as the real-world stacks, for example − a pack of cards or a pile of plates, etc.
+
+  Queue Data Structure - a linear data structure where elements are stored in the FIFO (First In First Out) principle where the first element inserted would be the first element to be accessed. A queue is an Abstract Data Type (ADT) similar to stack, the thing that makes queue different from stack is that a queue is open at both its ends. The data is inserted into the queue through one end and deleted from it using the other end. A real-world example of queue can be a single-lane one-way road, where the vehicle enters first, exits first. More real-world examples can be seen as queues at the ticket windows and bus-stops.
+
+  Heap Data Structure - Heap is a special case of balanced binary tree data structure where the root-node key is compared with its children and arranged accordingly. 
+
+    Min-Heap − Where the value of the root node is less than or equal to either of its children.
+
+    Max-Heap − Where the value of the root node is greater than or equal to either of its children.
+
+  Hash Data Structure - a data structure which stores data in an associative manner. In a hash table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data.
+
+    More at: https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm
+
+  Matrix/Grid Data Structure - Matrix, also referred to as a grid, is a special two-dimensional array in which elements are arranged in rows and columns. We can also say it is an array nested within another array. Each element of the matrix can be identified by the row and column index. Generally, matrix data structure is used to store and manipulate two-dimensional structures, such as graphs, maps, tables, etc. It can also be used to represent linear equations, transformations, rotations, and other mathematical concepts.
+
+  Graph Data Structure - A graph is an abstract data type (ADT) which consists of a set of objects that are connected to each other via links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges. Formally, a graph is a pair of sets (V, E), where V is the set of vertices and E is the set of edges, connecting the pairs of vertices.
+
+    Mathematical graphs can be represented in data structure. We can represent a graph using an array of vertices and a two-dimensional array of edges. 
+
+    Vertex − Each node of the graph is represented as a vertex. In the following example, the labeled circle represents vertices. Thus, A to G are vertices. We can represent them using an array as shown in the following image. Here A can be identified by index 0. B can be identified using index 1 and so on.
+
+    Edge − Edge represents a path between two vertices or a line between two vertices. In the following example, the lines from A to B, B to C, and so on represents edges. We can use a two-dimensional array to represent an array as shown in the following image. Here AB can be represented as 1 at row 0, column 1, BC as 1 at row 1, column 2 and so on, keeping other combinations as 0.
+
+    Adjacency − Two node or vertices are adjacent if they are connected to each other through an edge. In the following example, B is adjacent to A, C is adjacent to B, and so on.
+
+    Path − Path represents a sequence of edges between the two vertices. In the following example, ABCD represents a path from A to D.
+
+    More at: https://www.tutorialspoint.com/data_structures_algorithms/graph_data_structure.htm 
+
+  Tree Data Structure - A tree is a non-linear abstract data type with a hierarchy-based structure. It consists of nodes (where the data is stored) that are connected via links. The tree data structure stems from a single node called a root node and has subtrees connected to the root.
+
+  Important Terms:
+    Path − Path refers to the sequence of nodes along the edges of a tree.
+
+    Root − The node at the top of the tree is called root. There is only one root per tree and one path from the root node to any node.
+
+    Parent − Any node except the root node has one edge upward to a node called parent.
+
+    Child − The node below a given node connected by its edge downward is called its child node.
+
+    Leaf − The node which does not have any child node is called the leaf node.
+
+    Subtree − Subtree represents the descendants of a node.
+
+    Visiting − Visiting refers to checking the value of a node when control is on the node.
+
+    Traversing − Traversing means passing through nodes in a specific order.
+
+    Levels − Level of a node represents the generation of a node. If the root node is at level 0, then its next child node is at level 1, its grandchild is at level 2, and so on.
+
+    Keys − Key represents a value of a node based on which a search operation is to be carried out for a node.
+
+  Types of Trees:
+    General Trees - General trees are unordered tree data structures where the root node has minimum 0 or maximum ‘n’ subtrees. The General trees have no constraint placed on their hierarchy. The root node thus acts like the superset of all the other subtrees.
+
+    Binary Trees - Binary Trees are general trees in which the root node can only hold up to maximum 2 subtrees: left subtree and right subtree. Based on the number of children, binary trees are divided into three types.
+
+      Full Binary Tree - a binary tree type where every node has either 0 or 2 child nodes.
+
+      Complete Binary Tree - a binary tree type where all the leaf nodes must be on the same level. However, root and internal nodes in a complete binary tree can either have 0, 1 or 2 child nodes.
+
+      Perfect Binary Tree - a binary tree type where all the leaf nodes are on the same level and every node except leaf nodes have 2 children.
+
+    
